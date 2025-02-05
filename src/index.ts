@@ -40,6 +40,20 @@ interface FileSemanticArgs {
   outputPath: string;
 }
 
+interface SemanticChange {
+  type: 'addition' | 'deletion' | 'modification';
+  content: string;
+  context?: string;
+  impact: 'high' | 'medium' | 'low';
+}
+
+interface ChangePattern {
+  pattern: string;
+  frequency: number;
+  significance: 'high' | 'medium' | 'low';
+  context: string;
+}
+
 class GitFileForensicsServer {
   private server: Server;
 
@@ -450,7 +464,7 @@ class GitFileForensicsServer {
     return [];
   }
 
-  private analyzeChangePatterns(changes: any[]) {
+  private analyzeChangePatterns(changes: SemanticChange[]): ChangePattern[] {
     // Implement pattern analysis
     return [];
   }
@@ -488,7 +502,7 @@ class GitFileForensicsServer {
     };
   }
 
-  private generateSemanticSummary(changes: any[], patterns: any[]) {
+  private generateSemanticSummary(changes: SemanticChange[], patterns: ChangePattern[]) {
     return {
       dominantPatterns: this.identifyDominantPatterns(patterns),
       changeTypes: this.categorizeChanges(changes),
@@ -530,17 +544,17 @@ class GitFileForensicsServer {
     return 'low';
   }
 
-  private identifyDominantPatterns(patterns: any[]) {
+  private identifyDominantPatterns(patterns: ChangePattern[]): Array<{ pattern: string; significance: string }> {
     // Implement pattern identification
     return [];
   }
 
-  private categorizeChanges(changes: any[]) {
+  private categorizeChanges(changes: SemanticChange[]): Record<string, number> {
     // Implement change categorization
     return {};
   }
 
-  private assessFileStability(changes: any[]): 'stable' | 'evolving' | 'volatile' {
+  private assessFileStability(changes: SemanticChange[]): 'stable' | 'evolving' | 'volatile' {
     // Implement stability assessment
     return 'stable';
   }
