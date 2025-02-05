@@ -114,3 +114,9 @@ All tools output JSON files containing:
 - Git (must be installed and accessible)
 - MCP SDK
 
+## License
+
+This project is licensed under the Apache License, Version 2.0 - see the [LICENSE.txt](LICENSE.txt) file for details.
+
+Copyright davidorex.ai. Licensed under the Apache License, Version 2.0; you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
