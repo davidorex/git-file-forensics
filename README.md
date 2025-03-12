@@ -2,6 +2,10 @@
 
 An MCP tool for deep git file-level forensics that helps get detailed insights into file histories, changes, and patterns, focusing on individual file analysis rather than repository-wide operations.
 
+<a href="https://glama.ai/mcp/servers/udo0t2vaww">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/udo0t2vaww/badge" alt="Git File Forensics MCP server" />
+</a>
+
 ## Installation
 
 1. Clone and build the server:
@@ -119,4 +123,3 @@ All tools output JSON files containing:
 This project is licensed under the Apache License, Version 2.0 - see the [LICENSE.txt](LICENSE.txt) file for details.
 
 Copyright davidorex.ai. Licensed under the Apache License, Version 2.0; you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-
