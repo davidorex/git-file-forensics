@@ -1,9 +1,19 @@
 # Git File Forensics MCP
+[![smithery badge](https://smithery.ai/badge/@davidorex/git-file-forensics)](https://smithery.ai/server/@davidorex/git-file-forensics)
 
 An MCP tool for deep git file-level forensics that helps get detailed insights into file histories, changes, and patterns, focusing on individual file analysis rather than repository-wide operations.
 
 ## Installation
 
+### Installing via Smithery
+
+To install Git File Forensics for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@davidorex/git-file-forensics):
+
+```bash
+npx -y @smithery/cli install @davidorex/git-file-forensics --client claude
+```
+
+### Manual Installation
 1. Clone and build the server:
 ```bash
 git clone [repository-url]
@@ -119,4 +129,3 @@ All tools output JSON files containing:
 This project is licensed under the Apache License, Version 2.0 - see the [LICENSE.txt](LICENSE.txt) file for details.
 
 Copyright davidorex.ai. Licensed under the Apache License, Version 2.0; you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
-
