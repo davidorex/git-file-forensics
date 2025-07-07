@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/davidorex-git-file-forensics-badge.png)](https://mseep.ai/app/davidorex-git-file-forensics)
+
 # Git File Forensics MCP
 
 An MCP tool for deep git file-level forensics that helps get detailed insights into file histories, changes, and patterns, focusing on individual file analysis rather than repository-wide operations.
